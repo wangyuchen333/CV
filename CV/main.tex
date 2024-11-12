@@ -1,0 +1,154 @@
+%!TEX program = xelatex
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+% \documentclass{article}
+\usepackage[UTF8]{ctex}
+\usepackage[left=0.7in,top=0.6in,right=0.7in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidt}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+\usepackage{amsfonts}
+
+\usepackage{array}
+\usepackage{booktabs}
+
+\usepackage{comment}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,      
+  urlcolor=OrangeRed,
+}
+
+\usepackage[UTF8]{ctex} 
+\def\ie{\textit{i.e.,~}}
+\def\eg{\textit{e.g.,~}}
+\def\etc{\textit{etc~}}
+\def\etal{\textit{et al.~}}
+\def\wrt{\textit{w.r.t.~}}
+\def\vs{\textit{v.s.~}}
+\def\resp{\textit{resp.~}}
+\def\sota{state-of-the-art~}
+
+\definecolor{tomato}{rgb}{1.0, 0.39, 0.28}
+\definecolor{cornflowerblue}{rgb}{0.39, 0.58, 0.93}
+
+\definecolor{violet}{rgb}{0.56, 0.0, 1.0}
+\definecolor{unitednationsblue}{rgb}{0.36, 0.57, 0.9}
+\definecolor{teal}{rgb}{0.0, 0.5, 0.5}
+
+\definecolor{wisteria}{rgb}{0.79, 0.63, 0.86}
+\definecolor{byzantine}{rgb}{0.74, 0.2, 0.64}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}	
+\definecolor{azure}{rgb}{0.0, 0.5, 1.0}
+
+\name{Yuchen Wang}
+\address{
+    \href{mailto:wangyuchen333@stu.pku.edu.cn}
+    {\textcolor{OrangeRed}{wangyuchen333@stu.pku.edu.cn}}
+    \\  
+    \href{https://wangyuchen333.github.io/} 
+    {\textcolor{OrangeRed}{https://wangyuchen333.github.io/}} 
+}
+
+\begin{document}
+
+
+\begin{rSection}{EDUCATION EXPERIENCES}
+
+\textbf{Peking University, Electrical Engineering and Computer Science}                  \hfill  2021 - 2025(expected) \\
+Undergraduate,\textit{Bachelor of Science } \hfill \textit{GPA 87 (Yr1 84.7 Yr2 88.4 Yr3 87.4)}
+\hfill \textit{Rank 20\%(6/29)}
+
+\end{rSection}
+
+
+
+\begin{rSection}{ SELECTED AWARDS}
+
+\renewcommand{\arraystretch}{1}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{12ex}} l } 
+Zhi Class Scholarship 2023 (Top 1\%) \\ 
+Outstanding Academic Achievement Award 2023 (Top 5\%) \\
+Zhi Class Scholarship 2024 (Top 1\%) \\ 
+\specialrule{0em}{0pt}{1pt}
+\end{tabular}
+\end{rSection}
+
+
+
+% \begin{rSection}{SELECTED COURSES}
+% \textbf{Theory:} Mathematical Analysis. The Mathematics in Artificial Intelligence (Probability and Statistics). Advanced Algebra. Introduction to Numerical Analysis. Machine Learning. Information Theory. Convex Optimization and Analysis. \\
+% \textbf{Engineering:} Introduction to Artificial Intelligence. Introduction to Visual Computing and Interaction. Computer Vision. Introduction to Data Science with Python. Foundations of Natural Language Processing. Trustworthy Machine Learning. Introduction to Generative Modeling. Multimodal Learning. Introduction to Intelligence Robots. \\
+% \textbf{Research:} Methodologies and Practice for AI Research.
+
+% \textbf{\href{https://arxiv.org/abs/2210.12867}{\textcolor{Black}{Deep  Equilibrium Approaches To Diffusion Models}}
+% }} \\
+% \textsl{Neural Information Processing Systems (\textcolor{azure}{NeurIPS}) 2022} \\
+% Ashwini Pokle, \underline{Zhengyang Geng}, and J. Zico Kolter \\
+% \textcolor{byzantine}{TL;DR}: Parallel diffusion sampling via a joint lower triangular equilibrium process.
+
+
+\begin{rSection}{SELECTED PROJECTS}
+
+\begin{itemize}
+    \item \textbf{\textit{Investigating Prompts for PointCLIP V2}} \\
+    \href{https://github.com/wangyuchen333/InvestigateOnPromptsForPointCLIPV2}{Code} | \href{https://arxiv.org/abs/2211.11682}{Publication} \\
+    This research delves into the factors behind PointCLIP V2's superior performance on various tasks, with a focus on the role of prompt searching. The study examines how advanced Large Language Models (LLMs) can enhance prompt-image alignment within CLIP. A significant finding is that more capable LLMs do not guarantee improved outcomes; rather, the effectiveness of prompts critically depends on the selection of relevant images, underscoring the importance of a comprehensive search process.
+    
+    \item \textbf{\textit{Fast Simulation of Mass-Spring Systems}} \\
+    \href{https://github.com/wangyuchen333/FastSimulationMass-SpringSystems}{Code} | \href{http://tiantianliu.cn/papers/liu13fast/liu13fast.html}{Publication} \\
+    Presents an efficient method for rapidly and stably simulating mass-spring systems using an accelerated solver based on block coordinate descent. This approach achieves higher frame rates, delivering results visually on par with real-time simulations while maintaining the stability of the implicit Euler method at a reduced computational cost.
+    
+
+    
+    \item \textbf{\textit{Seismic Phase Picking}} \\
+    \href{https://github.com/wangyuchen333/SeismicPhasePicking}{Code} |  \href{https://arxiv.org/abs/2410.15907}{Report} \\
+    Seismic phase picking, crucial for earthquake monitoring, aims to determine the arrival times of P- and S-waves from seismic waveforms. While manual phase picking is reliable, the growing number of global stations and seismic monitors makes it increasingly difficult for humans to manage comprehensively. This work explores various automatic phase picking methods, including traditional and learning-based approaches.
+
+    \item For insights into my recent academic readings, visit \href{https://github.com/wangyuchen333/paperReadings}{Paper Readings} repository.
+\end{itemize}
+
+\end{rSection}
+
+\begin{rSection}{ACADEMIC SERVICES}
+
+\textit{Advised by Prof. Liwei Wang from Peking University} \hfill \textit{2023.9 - 2024.4} \\
+\begin{itemize}
+    \item \textbf{Explore Model Merging for Large Language Models.}
+
+\end{itemize}
+
+\textit{Advised by Prof. Difan Zou from The University of Hong Kong} \hfill \textit{2024.7 - present} \\
+\begin{itemize}
+    \item \textbf{Investigate the Understanding of In-Context Learning for Large Language Models.}
+    \item \textbf{Discover the Effect of the MLP in Transformers.}
+    \item \textbf{Examine Collapse Errors Induced by Deterministic Samplers in Diffusion Models.}
+\end{itemize}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%---------------------------------------------------------------------------------------
+
+\begin{rSection}{SKILLS}
+\textbf{Programming Languages:} Python; Pytorch; C; C++; \LaTeX \\
+\textbf{Standard test scores:}
+TOEFL: 98 (S21), CET6: 590
+\end{rSection}
+
+\end{document}
